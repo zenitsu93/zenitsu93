@@ -26,7 +26,7 @@ Si vous cherchez quelqu'un de spécialisé sur une seule chose, ce n'est pas ici
 | Projet | En une phrase |
 | --- | --- |
 | **[rag-pdf-gemini](https://github.com/zenitsu93/rag-pdf-gemini)** | Poser des questions à un PDF plutôt que de le lire. Gemini, LangChain, Streamlit. |
-| **[2nbditigal](https://github.com/zenitsu93/2nbditigal)** | Un site d'agence complet, front React et API Node sur Supabase. Là, c'était du sérieux. |
+| **[2nb-digital-site](https://github.com/zenitsu93/2nb-digital-site)** | Un site d'agence complet, front React et API Node sur Supabase. Là, c'était du sérieux. |
 | **[amazon-books-elt-snowflake](https://github.com/zenitsu93/amazon-books-elt-snowflake)** | Scraper Amazon, orchestrer avec Airflow, entreposer dans Snowflake. Le tout sous Docker. |
 | **[breast-cancer-ultrasound-cnn](https://github.com/zenitsu93/breast-cancer-ultrasound-cnn)** | Détecter le cancer du sein sur échographie. Supervision complète contre supervision faible. |
 | **[fasoservice](https://github.com/zenitsu93/fasoservice)** | Mettre en relation clients et techniciens au Burkina. React 19, Vite, Tailwind. |
@@ -45,10 +45,3 @@ Le reste est dans mes dépôts. Chacun a une description, promis.
 **Ingénierie** — Airflow, Snowflake, Spark, Hadoop, Docker, Supabase, PostgreSQL
 
 **Web** — React, Next.js, Vite, Tailwind, Node/Express, FastAPI, Django, AdonisJS
-
----
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=zenitsu93&show_icons=true&theme=dark&hide_border=true" alt="Statistiques GitHub">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zenitsu93&layout=compact&langs_count=8&theme=dark&hide_border=true" alt="Langages les plus utilisés">
-</div>
