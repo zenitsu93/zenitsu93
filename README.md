@@ -1,8 +1,7 @@
 <h1 align="center">Christian Thomas BADOLO</h1>
 
 <p align="center">
-  <b>Data scientist et développeur full-stack.</b><br>
-  Je construis des modèles, et les applications qui les rendent utilisables.
+  <b>Je code des trucs. Beaucoup de trucs. Pas toujours utiles.</b>
 </p>
 
 <p align="center">
@@ -12,32 +11,32 @@
 
 ---
 
-## Ce que je fais
+## Pourquoi tout ça existe
 
-Deux versants, et je cherche surtout à les faire se rejoindre.
+Autant le dire franchement : je code surtout pour le plaisir, pour me simplifier la vie, et pour me prouver à moi-même que je peux faire à peu près n'importe quoi. C'est une motivation assez puérile. C'est aussi exactement celle qui me fait pousser sur GitHub.
 
-**Données et apprentissage automatique.** RAG et grands modèles de langage, vision par ordinateur, séries temporelles, optimisation stochastique. Et la chaîne complète autour : Airflow, Snowflake, Spark, Docker.
+Le résultat est sous vos yeux. De la croissance tumorale modélisée par Gompertz à deux dépôts d'un CRM WhatsApp. Un détecteur de joueurs de football pas loin d'un pipeline Snowflake. Un configurateur de maison en 3D, parce qu'un jour j'ai voulu savoir si j'en étais capable.
 
-**Développement web.** React et TypeScript côté interface ; Node, FastAPI, Django et AdonisJS côté serveur ; Supabase et PostgreSQL pour les données.
+Si vous cherchez quelqu'un de spécialisé sur une seule chose, ce n'est pas ici. Si vous cherchez quelqu'un qui apprend vite parce qu'il s'ennuie vite, on devrait parler.
 
-Ce qui m'intéresse, c'est le passage de l'un à l'autre : un modèle qui reste dans un notebook ne sert personne.
+À côté de ça je fais aussi des choses sérieuses, sur commande, chez **2NB Digital**.
 
-## Projets
+## Ce que ça donne
 
-| Projet | De quoi il s'agit |
+| Projet | En une phrase |
 | --- | --- |
-| **[RAG-application-Gemini](https://github.com/zenitsu93/RAG-application-Gemini)** | Questions-réponses sur PDF par génération augmentée — Gemini, LangChain, Streamlit. |
-| **[2nbditigal](https://github.com/zenitsu93/2nbditigal)** | Site d'agence complet : front React/TypeScript et API Node sur Supabase, avec administration. |
-| **[ELT_Pipeline](https://github.com/zenitsu93/ELT_Pipeline)** | Pipeline ELT de bout en bout : scraping, orchestration Airflow sous Docker, entrepôt Snowflake. |
-| **[Enhanced_and_Full_Supervision_in_Breast_Cancer_Detection](https://github.com/zenitsu93/Enhanced_and_Full_Supervision_in_Breast_Cancer_Detection)** | Détection du cancer du sein sur échographies : supervision faible contre supervision complète, CNN pré-entraînés. |
-| **[fasoservice](https://github.com/zenitsu93/fasoservice)** | Plateforme de mise en relation clients / techniciens au Burkina Faso — React 19, Vite, Tailwind v4. |
-| **[detection-anomalies-salariales](https://github.com/zenitsu93/detection-anomalies-salariales)** | Détection d'anomalies salariales à partir des grilles internes, du marché et des profils RH. |
-| **[Graph_Attention_Networks](https://github.com/zenitsu93/Graph_Attention_Networks)** | Réseaux d'attention sur graphes appliqués à la classification de radiographies thoraciques. |
-| **[projet_nlp_rag](https://github.com/zenitsu93/projet_nlp_rag)** | Système de questions-réponses sur documents par recherche sémantique et génération augmentée. |
+| **[rag-pdf-gemini](https://github.com/zenitsu93/rag-pdf-gemini)** | Poser des questions à un PDF plutôt que de le lire. Gemini, LangChain, Streamlit. |
+| **[2nbditigal](https://github.com/zenitsu93/2nbditigal)** | Un site d'agence complet, front React et API Node sur Supabase. Là, c'était du sérieux. |
+| **[amazon-books-elt-snowflake](https://github.com/zenitsu93/amazon-books-elt-snowflake)** | Scraper Amazon, orchestrer avec Airflow, entreposer dans Snowflake. Le tout sous Docker. |
+| **[breast-cancer-ultrasound-cnn](https://github.com/zenitsu93/breast-cancer-ultrasound-cnn)** | Détecter le cancer du sein sur échographie. Supervision complète contre supervision faible. |
+| **[fasoservice](https://github.com/zenitsu93/fasoservice)** | Mettre en relation clients et techniciens au Burkina. React 19, Vite, Tailwind. |
+| **[detection-anomalies-salariales](https://github.com/zenitsu93/detection-anomalies-salariales)** | Repérer les salaires qui sortent du rang, grilles internes et marché à l'appui. |
+| **[gat-chest-xray-classification](https://github.com/zenitsu93/gat-chest-xray-classification)** | Des réseaux d'attention sur graphes appliqués à des radios du thorax. |
+| **[gompertz-tumor-growth](https://github.com/zenitsu93/gompertz-tumor-growth)** | Une équation différentielle et une tumeur. Voilà, voilà. |
 
-Le reste est dans mes dépôts — chacun porte une description de ce qu'il fait.
+Le reste est dans mes dépôts. Chacun a une description, promis.
 
-## Outils
+## Ce que je sais faire, pour de vrai
 
 **Langages** — Python, TypeScript, JavaScript, SQL, MATLAB
 
