@@ -1,47 +1,57 @@
-<h1 align="center">Christian Thomas BADOLO</h1>
+<p align="center">
+  <img src="assets/banniere-github.svg" alt="Christian Thomas Badolo" width="100%">
+</p>
 
 <p align="center">
   <b>Je code des trucs. Beaucoup de trucs. Pas toujours utiles.</b>
 </p>
 
 <p align="center">
-  <a href="mailto:christianthomasbadolo@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
-  <a href="https://www.linkedin.com/in/christianthomasbadolo/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/christianthomasbadolo/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:christianthomasbadolo@gmail.com">M'écrire</a> &nbsp;·&nbsp;
+  <a href="https://2nbdigital.com/">2NB Digital</a>
 </p>
 
 ---
 
-## Pourquoi tout ça existe
+### Salut !
 
-Autant le dire franchement : je code surtout pour le plaisir, pour me simplifier la vie, et pour me prouver à moi-même que je peux faire à peu près n'importe quoi. C'est une motivation assez puérile. C'est aussi exactement celle qui me fait pousser sur GitHub.
+Je code pour le fun, pour me simplifier la vie, et surtout pour me prouver que j'en suis capable. Une motivation un peu puérile, je l'avoue. C'est exactement elle qui me fait pousser sur GitHub.
 
-Le résultat est sous vos yeux. De la croissance tumorale modélisée par Gompertz à deux dépôts d'un CRM WhatsApp. Un détecteur de joueurs de football pas loin d'un pipeline Snowflake. Un configurateur de maison en 3D, parce qu'un jour j'ai voulu savoir si j'en étais capable.
+Résultat : une équation différentielle sur des tumeurs, un blind test, une maison en 3D tirée d'un plan, un CRM WhatsApp, un détecteur de joueurs de foot… et je suis loin d'avoir fini.
 
-Si vous cherchez quelqu'un de spécialisé sur une seule chose, ce n'est pas ici. Si vous cherchez quelqu'un qui apprend vite parce qu'il s'ennuie vite, on devrait parler.
+Le jour, je fais des trucs sérieux chez **[2NB Digital](https://2nbdigital.com/)**. Le reste du temps, je fais des trucs.
 
-À côté de ça je fais aussi des choses sérieuses, sur commande, chez **2NB Digital**.
-
-## Ce que ça donne
+### Ma boîte à trucs
 
 | Projet | En une phrase |
 | --- | --- |
-| **[rag-pdf-gemini](https://github.com/zenitsu93/rag-pdf-gemini)** | Poser des questions à un PDF plutôt que de le lire. Gemini, LangChain, Streamlit. |
-| **[2nb-digital-site](https://github.com/zenitsu93/2nb-digital-site)** | Un site d'agence complet, front React et API Node sur Supabase. Là, c'était du sérieux. |
-| **[amazon-books-elt-snowflake](https://github.com/zenitsu93/amazon-books-elt-snowflake)** | Scraper Amazon, orchestrer avec Airflow, entreposer dans Snowflake. Le tout sous Docker. |
-| **[breast-cancer-ultrasound-cnn](https://github.com/zenitsu93/breast-cancer-ultrasound-cnn)** | Détecter le cancer du sein sur échographie. Supervision complète contre supervision faible. |
-| **[fasoservice](https://github.com/zenitsu93/fasoservice)** | Mettre en relation clients et techniciens au Burkina. React 19, Vite, Tailwind. |
-| **[detection-anomalies-salariales](https://github.com/zenitsu93/detection-anomalies-salariales)** | Repérer les salaires qui sortent du rang, grilles internes et marché à l'appui. |
-| **[gat-chest-xray-classification](https://github.com/zenitsu93/gat-chest-xray-classification)** | Des réseaux d'attention sur graphes appliqués à des radios du thorax. |
-| **[gompertz-tumor-growth](https://github.com/zenitsu93/gompertz-tumor-growth)** | Une équation différentielle et une tumeur. Voilà, voilà. |
+| **[RAG sur PDF](https://github.com/zenitsu93/rag-pdf-gemini)** | Poser des questions à un PDF plutôt que de le lire. |
+| **[Gompertz](https://github.com/zenitsu93/gompertz-tumor-growth)** | Une équation différentielle et une tumeur. Voilà, voilà. |
+| **[Encore](https://github.com/zenitsu93/encore-duel-playlists)** | Un blind test pour savoir qui connaît vraiment ses classiques. |
+| **[Foot + YOLO](https://github.com/zenitsu93/yolo-v8-football-player-detection)** | Repérer chaque joueur sur le terrain. Même le latéral qui ne revient jamais. |
+| **[Anomalies salariales](https://github.com/zenitsu93/detection-anomalies-salariales)** | Repérer les salaires qui sortent du rang. Sans balancer personne. |
+| **[Amazon → Snowflake](https://github.com/zenitsu93/amazon-books-elt-snowflake)** | Scraper Amazon et tout ranger dans Snowflake. Le tout sous Docker. |
+| **[Échographies + CNN](https://github.com/zenitsu93/breast-cancer-ultrasound-cnn)** | Aider à repérer un cancer du sein sur échographie. AUC ≈ 0,95. |
+| **[Voyageur de commerce](https://github.com/zenitsu93/tsp-simulated-annealing)** | Trouver la tournée la plus courte en refroidissant doucement. |
 
-Le reste est dans mes dépôts. Chacun a une description, promis.
+Le reste est dans [mes dépôts](https://github.com/zenitsu93?tab=repositories). Chacun a une description, promis.
 
-## Ce que je sais faire, pour de vrai
+### Mode d'emploi
 
-**Langages** — Python, TypeScript, JavaScript, SQL, MATLAB
+- **Force** : la vivacité. Je capte vite, je m'emballe encore plus vite.
+- **Méthode** : pas besoin de réinventer la roue. Je m'inspire, je trouve l'astuce, je gagne du temps.
+- **Manie** : que tout soit carré. Vraiment tout.
+- **Point faible** : les plans à long terme. J'y travaille (sans plan, évidemment).
+- **Carburant** : un merci sincère, et une chanson dont les paroles me parlent.
 
-**Données et modèles** — PyTorch, TensorFlow, scikit-learn, LangChain, pandas, NetworkX
+### Avec quoi je bricole
 
-**Ingénierie** — Airflow, Snowflake, Spark, Hadoop, Docker, Supabase, PostgreSQL
+- **Langages** : Python, TypeScript, JavaScript, SQL
+- **IA et data** : PyTorch, TensorFlow, scikit-learn, LangChain, pandas
+- **Data engineering** : Airflow, Snowflake, Spark, Docker, PostgreSQL
+- **Web** : React, Next.js, Node.js, FastAPI, Django, Supabase
 
-**Web** — React, Next.js, Vite, Tailwind, Node/Express, FastAPI, Django, AdonisJS
+### On se parle ?
+
+Un projet, une idée bizarre, un merci : tout me va. **[christianthomasbadolo@gmail.com](mailto:christianthomasbadolo@gmail.com)**
