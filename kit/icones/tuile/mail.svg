@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+<title>M'écrire</title>
+<rect width="64" height="64" rx="14" fill="#0B1D2C"/>
+<g transform="translate(14 14) scale(0.75)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="11" width="36" height="26" rx="4" stroke="#FFFFFF"/>
+<path d="M8 14 L24 26 L40 14" stroke="#F2A541"/></g>
+</svg>

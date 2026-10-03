@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+<title>Profil</title>
+<rect width="64" height="64" rx="14" fill="#0B1D2C"/>
+<g transform="translate(14 14) scale(0.75)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="36" height="30" rx="4" stroke="#FFFFFF"/>
+<circle cx="17" cy="21" r="4" stroke="#FFFFFF"/>
+<path d="M11 32 C12 27, 22 27, 23 32" stroke="#FFFFFF"/>
+<path d="M28 19 H37" stroke="#F2A541"/><path d="M28 26 H35" stroke="#FFFFFF"/></g>
+</svg>

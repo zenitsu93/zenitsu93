@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img">
+<title>Foot</title>
+<g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17" stroke="#FFFFFF"/>
+<polygon points="24,18 29.7,22.1 27.5,28.9 20.5,28.9 18.3,22.1" stroke="#F2A541"/>
+<path d="M24 18 V7 M29.7 22.1 L40.2 18.7 M27.5 28.9 L34 37.8 M20.5 28.9 L14 37.8 M18.3 22.1 L7.8 18.7" stroke="#FFFFFF"/></g>
+</svg>
