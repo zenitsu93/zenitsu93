@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+<title>IA générative</title>
+<rect width="64" height="64" rx="14" fill="#0B1D2C"/>
+<g transform="translate(14 14) scale(0.75)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10 H38 Q42 10 42 14 V28 Q42 32 38 32 H22 L14 39 V32 H10 Q6 32 6 28 V14 Q6 10 10 10 Z" stroke="#FFFFFF"/>
+<circle cx="16" cy="21" r="1.6" fill="#FFFFFF" stroke="#FFFFFF"/><circle cx="24" cy="21" r="1.6" fill="#F2A541" stroke="#F2A541"/><circle cx="32" cy="21" r="1.6" fill="#FFFFFF" stroke="#FFFFFF"/></g>
+</svg>
