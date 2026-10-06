@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img"><title>Itinéraire</title>
-<circle cx="32" cy="32" r="32" fill="#0B1D2C"/>
-<g transform="translate(16 16) scale(0.6667)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="37" r="3.5" stroke="#E8ECEF"/><circle cx="38" cy="11" r="3.5" stroke="#E8ECEF"/>
+<circle cx="32" cy="32" r="32" fill="#E8ECEF"/>
+<g transform="translate(16 16) scale(0.6667)" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="37" r="3.5" stroke="#0B1D2C"/><circle cx="38" cy="11" r="3.5" stroke="#0B1D2C"/>
 <path d="M12 33 C14 22, 24 30, 26 22 C28 14, 32 15, 35 14" stroke="#E0892B" stroke-dasharray="0.5 6"/></g>
 </svg>

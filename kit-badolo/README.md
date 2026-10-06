@@ -2,10 +2,10 @@
   <img src="logos/banniere-github.png" alt="christian thomas badolo" width="100%">
 </p>
 
-# Kit de marque · badol●
+# Kit badol●
 
-Le kit visuel de Christian Thomas Badolo : un mot net, **badol●**, et une signature, **ctb.**
-Le point ambre est la signature du kit : c'est le dernier « o » de badolo, le point de ctb., et la fin de chaque titre.
+Le kit visuel de Christian Thomas Badolo : un mot net et rond, **badol●**.
+Le point ambre est la signature du kit : c'est le dernier « o » de badolo, et la fin de chaque titre.
 
 ## Logos
 
@@ -21,14 +21,9 @@ Le point ambre est la signature du kit : c'est le dernier « o » de badolo, le 
 <a href="logos/court-fond-brume.png">fond brume</a> · <a href="logos/court-fond-nuit.png">fond nuit</a> · <a href="logos/court-pour-fond-clair.png">transparent, fond clair</a> · <a href="logos/court-pour-fond-sombre.png">transparent, fond sombre</a></td>
 </tr>
 <tr>
-<td><img src="logos/ctb-fond-brume.png" width="300" alt="Signature ctb."></td>
-<td><b>Signature ctb.</b><br>Les initiales au pinceau et le nom complet. Pour signer : emails, documents, slides.<br><br>
-<a href="logos/ctb-fond-brume.png">fond brume</a> · <a href="logos/ctb-fond-nuit.png">fond nuit</a> · <a href="logos/ctb-pour-fond-clair.png">transparent, fond clair</a> · <a href="logos/ctb-pour-fond-sombre.png">transparent, fond sombre</a></td>
-</tr>
-<tr>
-<td><img src="logos/monogramme-ctb-nuit-rond.svg" width="140" alt="Monogramme ctb."></td>
-<td><b>Monogramme</b><br>ctb. seul : photo de profil, icône d'onglet.<br><br>
-<a href="logos/monogramme-ctb-nuit-rond.svg">nuit, rond</a> · <a href="logos/monogramme-ctb-nuit-carre.svg">nuit, carré</a> · <a href="logos/monogramme-ctb-brume-rond.svg">brume, rond</a> · <a href="logos/monogramme-ctb-brume-carre.svg">brume, carré</a> · <a href="logos/avatar-ctb.png">avatar PNG</a></td>
+<td><img src="logos/monogramme-b-fond-nuit.png" width="140" alt="Monogramme b●"></td>
+<td><b>Monogramme b●</b><br>Le b et le point : photo de profil, icône d'onglet.<br><br>
+<a href="logos/monogramme-b-fond-nuit.png">fond nuit</a> · <a href="logos/monogramme-b-fond-brume.png">fond brume</a> · <a href="logos/avatar-badolo.png">avatar 1000 × 1000</a></td>
 </tr>
 <tr>
 <td><img src="logos/banniere-github.png" width="360" alt="Bannière"></td>
@@ -40,8 +35,8 @@ Le point ambre est la signature du kit : c'est le dernier « o » de badolo, le 
 
 | | Nom | Hex | Rôle |
 | --- | --- | --- | --- |
-| <img src="couleurs/nuit.svg" width="28" alt=""> | Nuit | `#0B1D2C` | Texte, fonds sombres, tuiles d'icônes |
-| <img src="couleurs/brume.svg" width="28" alt=""> | Brume | `#E8ECEF` | Fond clair, texte sur fond sombre |
+| <img src="couleurs/nuit.svg" width="28" alt=""> | Nuit | `#0B1D2C` | Texte, traits des icônes, fonds sombres |
+| <img src="couleurs/brume.svg" width="28" alt=""> | Brume | `#E8ECEF` | Fond clair, pastilles d'icônes, texte sur fond sombre |
 | <img src="couleurs/ambre.svg" width="28" alt=""> | Ambre | `#E0892B` | Le point, le détail des icônes. Jamais en aplat |
 | <img src="couleurs/blanc.svg" width="28" alt=""> | Blanc | `#FFFFFF` | Respiration |
 | <img src="couleurs/gris.svg" width="28" alt=""> | Gris | `#5D6B78` | Textes secondaires |
@@ -52,7 +47,6 @@ Le point ambre est la signature du kit : c'est le dernier « o » de badolo, le 
 | --- | --- | --- |
 | Logo et titres | [Sora](https://fonts.google.com/specimen/Sora), gras, en minuscules | ma boîte à trucs● |
 | Texte et étiquettes | [Jost](https://fonts.google.com/specimen/Jost) | christian thomas |
-| Signature ctb. | [Comforter Brush](https://fonts.google.com/specimen/Comforter+Brush) | ctb. |
 
 ## Icônes
 
@@ -86,16 +80,15 @@ Le point ambre est la signature du kit : c'est le dernier « o » de badolo, le 
 </tr>
 </table>
 
-Chaque icône existe en trois versions : [`icones/rond/`](icones/rond) (pastille nuit, lisible partout), [`icones/pour-fond-clair/`](icones/pour-fond-clair) et [`icones/pour-fond-sombre/`](icones/pour-fond-sombre). Grille de 48, trait de 3, un seul détail ambre.
+Chaque icône existe en trois versions : [`icones/rond/`](icones/rond) (pastille brume, lisible partout), [`icones/pour-fond-clair/`](icones/pour-fond-clair) et [`icones/pour-fond-sombre/`](icones/pour-fond-sombre). Grille de 48, trait épais de 3,6 (comme le gras de Sora), un seul détail ambre.
 
 ## Règles
 
 - Le point ambre termine toujours quelque chose : un mot, un titre, une signature. Jamais au milieu, un seul par élément.
 - Les titres s'écrivent en minuscules et finissent par le point ambre.
 - L'ambre ne sert jamais de fond.
-- ctb. signe, badol● présente : la signature va en bas, le mot en haut.
 
 ## Licences
 
-Sora, Jost et Comforter Brush sont sous licence SIL Open Font License 1.1 ([texte](OFL-ComforterBrush.txt)).
+Sora et Jost sont sous licence SIL Open Font License 1.1.
 Logo et kit © 2026 Christian Thomas Badolo.

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img"><title>Musique</title>
-<circle cx="32" cy="32" r="32" fill="#0B1D2C"/>
-<g transform="translate(16 16) scale(0.6667)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 36 V10 L38 6 V32" stroke="#E8ECEF"/>
-<ellipse cx="13.5" cy="36" rx="5" ry="4" stroke="#E8ECEF"/><ellipse cx="33.5" cy="32" rx="5" ry="4" stroke="#E8ECEF"/>
+<circle cx="32" cy="32" r="32" fill="#E8ECEF"/>
+<g transform="translate(16 16) scale(0.6667)" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 36 V10 L38 6 V32" stroke="#0B1D2C"/>
+<ellipse cx="13.5" cy="36" rx="5" ry="4" stroke="#0B1D2C"/><ellipse cx="33.5" cy="32" rx="5" ry="4" stroke="#0B1D2C"/>
 <path d="M18 15 L38 11" stroke="#E0892B"/></g>
 </svg>
