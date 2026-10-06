@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img"><title>M'écrire</title>
+<circle cx="32" cy="32" r="31" fill="#FAF9F6" stroke="#121212" stroke-width="1.2"/>
+<g transform="translate(16 16) scale(0.6667)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="11" width="36" height="26" rx="4" stroke="#121212"/>
+<path d="M8 14 L24 26 L40 14" stroke="#2F55D4"/></g>
+</svg>

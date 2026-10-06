@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img"><title>Code</title>
-<circle cx="32" cy="32" r="32" fill="#0B1D2C"/>
-<g transform="translate(16 16) scale(0.6667)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14 L7 24 L17 34" stroke="#E8ECEF"/>
-<path d="M31 14 L41 24 L31 34" stroke="#E8ECEF"/>
+<circle cx="32" cy="32" r="32" fill="#E8ECEF"/>
+<g transform="translate(16 16) scale(0.6667)" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14 L7 24 L17 34" stroke="#0B1D2C"/>
+<path d="M31 14 L41 24 L31 34" stroke="#0B1D2C"/>
 <path d="M28 9 L20 39" stroke="#E0892B"/></g>
 </svg>

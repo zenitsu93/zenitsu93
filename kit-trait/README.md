@@ -2,7 +2,7 @@
   <img src="logos/banniere-github.svg" alt="Christian Thomas Badolo" width="100%">
 </p>
 
-# Kit de marque
+# Kit le trait
 
 Le kit visuel de Christian Thomas Badolo : logos, couleurs, typographie et icônes.
 Tout est en SVG vectoriel : les lettres sont converties en tracés, aucune police n'est nécessaire pour afficher les fichiers.
