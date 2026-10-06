@@ -84,6 +84,9 @@ Les titres de section du profil sont dans [`titres/`](titres), chacun en version
 <td align="center"><img src="icones/tuile/carre.svg" width="56" alt=""><br>Tout carré</td>
 <td align="center"><img src="icones/tuile/agenda.svg" width="56" alt=""><br>Plans</td>
 </tr>
+<tr>
+<td align="center"><img src="icones/tuile/graphe.svg" width="56" alt=""><br>Graphes</td>
+</tr>
 </table>
 
 Chaque icône existe en trois versions :

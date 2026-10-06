@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
+<title>Graphes</title>
+<rect width="64" height="64" rx="14" fill="#0B1D2C"/>
+<g transform="translate(14 14) scale(0.75)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12.1 32 L21.9 14 M26.1 14 L35.9 32 M14.5 36 H33.5 M20.2 29.4 L13.8 33.6 M24 22.5 V14.5 M27.8 29.4 L34.2 33.6" stroke="#FFFFFF"/>
+<circle cx="10" cy="36" r="4" stroke="#FFFFFF"/><circle cx="24" cy="10" r="4" stroke="#FFFFFF"/><circle cx="38" cy="36" r="4" stroke="#FFFFFF"/>
+<circle cx="24" cy="27" r="3.6" fill="#F2A541" stroke="#F2A541"/></g>
+</svg>
