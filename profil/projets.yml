@@ -1,0 +1,76 @@
+# Ma boîte à trucs : les projets affichés sur le profil.
+#
+# Ajouter un projet : mets le sujet « boite-a-trucs » sur son dépôt
+# (page du dépôt > About > roue dentée > Topics). Sa carte arrive cette nuit,
+# ou tout de suite via Actions > Profil > Run workflow.
+# Projet phare (la grande carte en haut) : sujet « phare » sur le dépôt, ou « phare: true » ici.
+#
+# Ce fichier sert à personnaliser une carte ou à en cacher une. Tout est optionnel :
+#   depot         nom exact du dépôt
+#   titre         sinon, le nom du dépôt mis en forme
+#   tag           petite ligne au-dessus du titre, ex. « IA · Produit »
+#   description   sinon, la description du dépôt
+#   stack         les technos affichées, sinon déduites des sujets du dépôt
+#   illustration  fangup, anomalies, learny, encore, monitoring, elt, gat, maintenance
+#   icone         sinon, l'icône du kit qui colle aux sujets (code, bulle, data, globe, courbe,
+#                 oeil, note, ballon, loupe, route, cube, coeur, graphe…)
+#   cacher        true pour retirer la carte sans toucher au dépôt
+#
+# L'ordre de la liste est l'ordre d'affichage ; les nouveaux projets passent juste après le phare.
+
+projets:
+  - depot: FangUp
+    phare: true
+    tag: "IA · Produit"
+    description: "Une IA qui se souvient de tes projets et te relance au bon moment."
+    stack: [TypeScript, Telegram, Gemini]
+    illustration: fangup
+
+  - depot: detection-anomalies-salariales
+    titre: "Anomalies salariales"
+    tag: "Data · RH"
+    description: "Repérer les salaires hors norme, chiffrer l’ajustement, mesurer l’écart femmes-hommes."
+    stack: [Python, pandas, Isolation Forest]
+    illustration: anomalies
+
+  - depot: learny-education-chatbot
+    titre: Learny
+    tag: "IA · Éducation"
+    description: "Un assistant de révision qui répond à partir de tes cours, pas de ce qu’il croit savoir."
+    stack: [Django, Gemini, Chroma]
+    illustration: learny
+
+  - depot: encore-duel-playlists
+    titre: Encore
+    tag: "Web · Jeu"
+    description: "Un blind test multijoueur pour savoir qui connaît vraiment ses classiques."
+    stack: [Node.js, Zéro dépendance]
+    illustration: encore
+
+  - depot: heart-attack-api-monitoring
+    titre: "Modèle sous surveillance"
+    tag: MLOps
+    description: "Mettre un modèle en production, et savoir quand il déraille."
+    stack: [Docker, Prometheus, Grafana]
+    illustration: monitoring
+
+  - depot: amazon-books-elt-snowflake
+    titre: "Amazon → Snowflake"
+    tag: "Data engineering"
+    description: "Extraction, orchestration et entrepôt : un pipeline reproductible en une commande."
+    stack: [Airflow, PostgreSQL, Snowflake]
+    illustration: elt
+
+  - depot: gat-chest-xray-classification
+    titre: "GAT · radiographies"
+    tag: "Vision · Santé"
+    description: "Des radios du thorax qui se comparent entre elles pour mieux se classer. AUC 0,88."
+    stack: [VGG16, Graph Attention Networks]
+    illustration: gat
+
+  - depot: predictive-maintenance-optimal-transport
+    titre: "Maintenance prédictive"
+    tag: "Maths · Industrie"
+    description: "Voir venir la panne sans en avoir vu une, grâce au transport optimal."
+    stack: [Transport optimal, Séries temporelles]
+    illustration: maintenance

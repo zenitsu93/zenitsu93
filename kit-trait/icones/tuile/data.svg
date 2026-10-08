@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
-<title>Data</title>
-<rect width="64" height="64" rx="14" fill="#0B1D2C"/>
-<g transform="translate(14 14) scale(0.75)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="11" rx="15" ry="5" stroke="#F2A541"/>
-<path d="M9 11 V37 C9 40, 16 42, 24 42 C32 42, 39 40, 39 37 V11" stroke="#FFFFFF"/>
-<path d="M9 24 C9 27, 16 29, 24 29 C32 29, 39 27, 39 24" stroke="#FFFFFF"/></g>
-</svg>

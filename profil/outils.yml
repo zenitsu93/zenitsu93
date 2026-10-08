@@ -1,0 +1,22 @@
+# Avec quoi je bricole : une carte par catégorie, reliée au b par un faisceau.
+# Ajoute un outil ou une catégorie, l'image se redessine à la prochaine passe de l'Action.
+# Entre 2 et 6 catégories ; 4 tombe le mieux.
+# Icônes possibles : code, bulle, data, globe, courbe, oeil, note, ballon, loupe, route, cube,
+# coeur, eclair, ampoule, carre, agenda, graphe, mail, profil.
+
+categories:
+  - nom: Langages
+    icone: code
+    outils: [Python, TypeScript, JavaScript, SQL]
+
+  - nom: IA et data
+    icone: bulle
+    outils: [PyTorch, TensorFlow, scikit-learn, LangChain, pandas]
+
+  - nom: Data engineering
+    icone: data
+    outils: [Airflow, Snowflake, Spark, Docker, PostgreSQL]
+
+  - nom: Web
+    icone: globe
+    outils: [React, Next.js, Node.js, FastAPI, Django, Supabase]

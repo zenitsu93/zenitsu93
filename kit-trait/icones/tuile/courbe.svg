@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
-<title>Maths</title>
-<rect width="64" height="64" rx="14" fill="#0B1D2C"/>
-<g transform="translate(14 14) scale(0.75)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6 V40 H42" stroke="#FFFFFF"/>
-<path d="M12 12 C18 40, 30 40, 38 14" stroke="#FFFFFF"/>
-<circle cx="24.3" cy="33.2" r="2.6" fill="#F2A541" stroke="#F2A541"/></g>
-</svg>

@@ -1,94 +1,79 @@
 <p align="center">
-  <img src="logos/banniere-github.png" alt="christian thomas badolo" width="100%">
+  <img src="09-github/banniere.png" alt="christian thomas badolo" width="100%">
 </p>
 
-# Kit badol●
+# Kit de marque · badolo
 
-Le kit visuel de Christian Thomas Badolo : un mot net et rond, **badol●**.
-Le point ambre est la signature du kit : c'est le dernier « o » de badolo, et la fin de chaque titre.
+L'identité visuelle de Christian Thomas Badolo : un **b** construit sur un cercle, et un point orange qui ne le quitte jamais.
 
-## Logos
+<p align="center">
+  <img src="09-github/monogramme-anime.webp" alt="Le monogramme se construit" width="300">
+</p>
 
-<table>
-<tr>
-<td width="380"><img src="logos/principal-fond-brume.png" width="360" alt="Logo principal"></td>
-<td><b>Principal</b><br>« christian thomas » au-dessus de <b>badol●</b>.<br><br>
-<a href="logos/principal-fond-brume.png">fond brume</a> · <a href="logos/principal-fond-nuit.png">fond nuit</a> · <a href="logos/principal-pour-fond-clair.png">transparent, fond clair</a> · <a href="logos/principal-pour-fond-sombre.png">transparent, fond sombre</a></td>
-</tr>
-<tr>
-<td><img src="logos/court-fond-brume.png" width="300" alt="Logo court"></td>
-<td><b>Court</b><br><b>badol●</b> seul, pour les petits espaces.<br><br>
-<a href="logos/court-fond-brume.png">fond brume</a> · <a href="logos/court-fond-nuit.png">fond nuit</a> · <a href="logos/court-pour-fond-clair.png">transparent, fond clair</a> · <a href="logos/court-pour-fond-sombre.png">transparent, fond sombre</a></td>
-</tr>
-<tr>
-<td><img src="logos/monogramme-b-fond-nuit.png" width="140" alt="Monogramme b●"></td>
-<td><b>Monogramme b●</b><br>Le b et le point : photo de profil, icône d'onglet.<br><br>
-<a href="logos/monogramme-b-fond-nuit.png">fond nuit</a> · <a href="logos/monogramme-b-fond-brume.png">fond brume</a> · <a href="logos/avatar-badolo.png">avatar 1000 × 1000</a></td>
-</tr>
-<tr>
-<td><img src="logos/banniere-github.png" width="360" alt="Bannière"></td>
-<td><b>Bannière GitHub</b><br>1280 × 400, en haut du README.</td>
-</tr>
-</table>
+## La charte
+
+<p align="center">
+  <img src="07-charte/page-1.png" width="49%" alt="Couverture">
+  <img src="07-charte/page-2.png" width="49%" alt="Le logo">
+  <img src="07-charte/page-3.png" width="49%" alt="Les couleurs">
+  <img src="07-charte/page-4.png" width="49%" alt="La typographie">
+</p>
+
+Charte complète en PDF : [`07-charte/charte-graphique-badolo.pdf`](07-charte/charte-graphique-badolo.pdf), avec les usages à éviter en page 5.
 
 ## Couleurs
 
-| | Nom | Hex | Rôle |
-| --- | --- | --- | --- |
-| <img src="couleurs/nuit.svg" width="28" alt=""> | Nuit | `#0B1D2C` | Texte, traits des icônes, fonds sombres |
-| <img src="couleurs/brume.svg" width="28" alt=""> | Brume | `#E8ECEF` | Fond clair, pastilles d'icônes, texte sur fond sombre |
-| <img src="couleurs/ambre.svg" width="28" alt=""> | Ambre | `#E0892B` | Le point, le détail des icônes. Jamais en aplat |
-| <img src="couleurs/blanc.svg" width="28" alt=""> | Blanc | `#FFFFFF` | Respiration |
-| <img src="couleurs/gris.svg" width="28" alt=""> | Gris | `#5D6B78` | Textes secondaires |
+| | Nom | Hex | Part | Rôle |
+| --- | --- | --- | --- | --- |
+| <img src="09-github/couleurs/marine.svg" width="26" alt=""> | Marine | `#0E1D2C` | 60 % | Fonds sombres, texte, logo |
+| <img src="09-github/couleurs/gris-clair.svg" width="26" alt=""> | Gris clair | `#E8ECEF` | 30 % | Fonds clairs, logo sur marine |
+| <img src="09-github/couleurs/orange.svg" width="26" alt=""> | Orange | `#E08A2C` | 10 % | Le point, les accents, les chiffres clés |
+| <img src="09-github/couleurs/gris-texte.svg" width="26" alt=""> | Gris texte | `#8A97A6` | | Textes secondaires |
+
+L'orange reste un accent : jamais en texte courant, jamais en grand aplat derrière du texte fin.
 
 ## Typographie
 
-| Usage | Police | Exemple |
-| --- | --- | --- |
-| Logo et titres | [Sora](https://fonts.google.com/specimen/Sora), gras, en minuscules | ma boîte à trucs● |
-| Texte et étiquettes | [Jost](https://fonts.google.com/specimen/Jost) | christian thomas |
+**Inter Display** ExtraBold, interlettrage serré, pour les titres. **Inter** Medium, interlettrage large, pour le nom et les sous-titres. Inter Regular pour le texte courant.
 
 ## Icônes
 
-<table>
-<tr>
-<td align="center"><img src="icones/rond/mail.svg" width="56" alt=""><br>M'écrire</td>
-<td align="center"><img src="icones/rond/profil.svg" width="56" alt=""><br>Profil</td>
-<td align="center"><img src="icones/rond/globe.svg" width="56" alt=""><br>Site</td>
-<td align="center"><img src="icones/rond/code.svg" width="56" alt=""><br>Code</td>
-<td align="center"><img src="icones/rond/bulle.svg" width="56" alt=""><br>IA générative</td>
-<td align="center"><img src="icones/rond/data.svg" width="56" alt=""><br>Data</td>
-</tr>
-<tr>
-<td align="center"><img src="icones/rond/courbe.svg" width="56" alt=""><br>Maths</td>
-<td align="center"><img src="icones/rond/oeil.svg" width="56" alt=""><br>Vision</td>
-<td align="center"><img src="icones/rond/note.svg" width="56" alt=""><br>Musique</td>
-<td align="center"><img src="icones/rond/ballon.svg" width="56" alt=""><br>Foot</td>
-<td align="center"><img src="icones/rond/loupe.svg" width="56" alt=""><br>Anomalies</td>
-<td align="center"><img src="icones/rond/route.svg" width="56" alt=""><br>Itinéraire</td>
-</tr>
-<tr>
-<td align="center"><img src="icones/rond/cube.svg" width="56" alt=""><br>3D</td>
-<td align="center"><img src="icones/rond/coeur.svg" width="56" alt=""><br>Avec le cœur</td>
-<td align="center"><img src="icones/rond/eclair.svg" width="56" alt=""><br>Vivacité</td>
-<td align="center"><img src="icones/rond/ampoule.svg" width="56" alt=""><br>Astuce</td>
-<td align="center"><img src="icones/rond/carre.svg" width="56" alt=""><br>Tout carré</td>
-<td align="center"><img src="icones/rond/agenda.svg" width="56" alt=""><br>Plans</td>
-</tr>
-<tr>
-<td align="center"><img src="icones/rond/graphe.svg" width="56" alt=""><br>Graphes</td>
-</tr>
-</table>
+<p>
+  <img src="08-icones/pastille/mail.svg" width="44" alt="M'écrire">
+  <img src="08-icones/pastille/profil.svg" width="44" alt="Profil">
+  <img src="08-icones/pastille/globe.svg" width="44" alt="Site">
+  <img src="08-icones/pastille/code.svg" width="44" alt="Code">
+  <img src="08-icones/pastille/bulle.svg" width="44" alt="IA">
+  <img src="08-icones/pastille/data.svg" width="44" alt="Data">
+  <img src="08-icones/pastille/courbe.svg" width="44" alt="Maths">
+  <img src="08-icones/pastille/oeil.svg" width="44" alt="Vision">
+  <img src="08-icones/pastille/note.svg" width="44" alt="Musique">
+  <img src="08-icones/pastille/ballon.svg" width="44" alt="Foot">
+  <img src="08-icones/pastille/loupe.svg" width="44" alt="Anomalies">
+  <img src="08-icones/pastille/route.svg" width="44" alt="Itinéraire">
+  <img src="08-icones/pastille/cube.svg" width="44" alt="3D">
+  <img src="08-icones/pastille/coeur.svg" width="44" alt="Avec le cœur">
+  <img src="08-icones/pastille/eclair.svg" width="44" alt="Vivacité">
+  <img src="08-icones/pastille/ampoule.svg" width="44" alt="Astuce">
+  <img src="08-icones/pastille/carre.svg" width="44" alt="Tout carré">
+  <img src="08-icones/pastille/agenda.svg" width="44" alt="Plans">
+  <img src="08-icones/pastille/graphe.svg" width="44" alt="Graphes">
+</p>
 
-Chaque icône existe en trois versions : [`icones/rond/`](icones/rond) (pastille brume, lisible partout), [`icones/pour-fond-clair/`](icones/pour-fond-clair) et [`icones/pour-fond-sombre/`](icones/pour-fond-sombre). Grille de 48, trait épais de 3,6 (comme le gras de Sora), un seul détail ambre.
+Trait épais et arrondi, et comme le monogramme, un seul point orange par icône. Trois versions : [`pastille`](08-icones/pastille) (lisible partout), [`pour-fond-clair`](08-icones/pour-fond-clair), [`pour-fond-sombre`](08-icones/pour-fond-sombre).
 
-## Règles
+## Le contenu du kit
 
-- Le point ambre termine toujours quelque chose : un mot, un titre, une signature. Jamais au milieu, un seul par élément.
-- Les titres s'écrivent en minuscules et finissent par le point ambre.
-- L'ambre ne sert jamais de fond.
+| Dossier | Ce qu'on y trouve |
+| --- | --- |
+| [`01-logos`](01-logos) | Logo horizontal, empilé, texte, monogramme rond et carré, en SVG, PNG et PDF, dans toutes les couleurs |
+| [`02-profils`](02-profils) | Avatars et cadres photo pour les réseaux |
+| [`03-bannieres`](03-bannieres) | Bannières LinkedIn, X, Facebook, YouTube, Notion, aperçu de lien, couverture d'article |
+| [`04-gabarits`](04-gabarits) | Posts, carrousels, citation, chiffre clé, miniature vidéo |
+| [`05-outils-pro`](05-outils-pro) | Carte de visite, signature email, QR vCard, fonds de visio |
+| [`06-favicons`](06-favicons) | Favicons et icônes d'application |
+| [`07-charte`](07-charte) | La charte graphique |
+| [`08-icones`](08-icones) | Les icônes du kit |
+| [`09-github`](09-github) | Bannière, titres, boutons et monogramme animé du profil GitHub. Les images animées du profil sont générées dans [`profil`](../profil) |
 
-## Licences
-
-Sora et Jost sont sous licence SIL Open Font License 1.1.
 Logo et kit © 2026 Christian Thomas Badolo.
