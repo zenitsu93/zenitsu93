@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img">
-<title>Code</title>
-<rect width="64" height="64" rx="14" fill="#0B1D2C"/>
-<g transform="translate(14 14) scale(0.75)" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14 L7 24 L17 34" stroke="#FFFFFF"/>
-<path d="M31 14 L41 24 L31 34" stroke="#FFFFFF"/>
-<path d="M28 9 L20 39" stroke="#F2A541"/></g>
-</svg>
