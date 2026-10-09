@@ -1,0 +1,53 @@
+name: Profil
+
+# Redessine les images animées du profil et la section « ma boîte à trucs » du README.
+# Chaque nuit, à la main (Actions > Profil > Run workflow), ou quand projets.yml / outils.yml change.
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "profil/projets.yml"
+      - "profil/outils.yml"
+      - "profil/moteur/**"
+      - ".github/workflows/profil.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profil
+  cancel-in-progress: false
+
+jobs:
+  cartes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dépendances
+        run: pip install "fonttools>=4.40" "pyyaml>=6"
+
+      - name: Génération
+        run: python profil/moteur/generer.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFIL_USER: ${{ github.repository_owner }}
+
+      - name: Enregistrement
+        run: |
+          if [ -z "$(git status --porcelain -- profil README.md)" ]; then
+            echo "Rien n'a changé."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A profil README.md
+          git commit -m "profil : cartes mises à jour"
+          git push
