@@ -33,14 +33,13 @@ Le jour, je conçois des produits data, IA et web chez **[2NB Digital](https://2
 
 <!-- boite-a-trucs:debut -->
 <p align="center">
-  <a href="https://github.com/zenitsu93/FangUp"><img src="profil/images/projets/fangup.svg" alt="FangUp : Une IA qui se souvient de tes projets et te relance au bon moment." width="100%"></a>
-  <a href="https://github.com/zenitsu93/detection-anomalies-salariales"><img src="profil/images/projets/detection-anomalies-salariales.svg" alt="Anomalies salariales : Repérer les salaires hors norme, chiffrer l’ajustement, mesurer l’écart femmes-hommes." width="49%"></a>
+  <a href="https://github.com/zenitsu93/detection-anomalies-salariales"><img src="profil/images/projets/detection-anomalies-salariales.svg" alt="Anomalies salariales : Repérer les salaires hors norme, chiffrer l’ajustement, mesurer l’écart femmes-hommes." width="100%"></a>
   <a href="https://github.com/zenitsu93/learny-education-chatbot"><img src="profil/images/projets/learny-education-chatbot.svg" alt="Learny : Un assistant de révision qui répond à partir de tes cours, pas de ce qu’il croit savoir." width="49%"></a>
   <a href="https://github.com/zenitsu93/encore-duel-playlists"><img src="profil/images/projets/encore-duel-playlists.svg" alt="Encore : Un blind test multijoueur pour savoir qui connaît vraiment ses classiques." width="49%"></a>
   <a href="https://github.com/zenitsu93/heart-attack-api-monitoring"><img src="profil/images/projets/heart-attack-api-monitoring.svg" alt="Modèle sous surveillance : Mettre un modèle en production, et savoir quand il déraille." width="49%"></a>
-  <a href="https://github.com/zenitsu93/amazon-books-elt-snowflake"><img src="profil/images/projets/amazon-books-elt-snowflake.svg" alt="Amazon → Snowflake : Extraction, orchestration et entrepôt : un pipeline reproductible en une commande." width="32%"></a>
-  <a href="https://github.com/zenitsu93/gat-chest-xray-classification"><img src="profil/images/projets/gat-chest-xray-classification.svg" alt="GAT · radiographies : Des radios du thorax qui se comparent entre elles pour mieux se classer. AUC 0,88." width="32%"></a>
-  <a href="https://github.com/zenitsu93/predictive-maintenance-optimal-transport"><img src="profil/images/projets/predictive-maintenance-optimal-transport.svg" alt="Maintenance prédictive : Voir venir la panne sans en avoir vu une, grâce au transport optimal." width="32%"></a>
+  <a href="https://github.com/zenitsu93/amazon-books-elt-snowflake"><img src="profil/images/projets/amazon-books-elt-snowflake.svg" alt="Amazon → Snowflake : Extraction, orchestration et entrepôt : un pipeline reproductible en une commande." width="49%"></a>
+  <a href="https://github.com/zenitsu93/gat-chest-xray-classification"><img src="profil/images/projets/gat-chest-xray-classification.svg" alt="GAT · radiographies : Des radios du thorax qui se comparent entre elles pour mieux se classer. AUC 0,88." width="49%"></a>
+  <a href="https://github.com/zenitsu93/predictive-maintenance-optimal-transport"><img src="profil/images/projets/predictive-maintenance-optimal-transport.svg" alt="Maintenance prédictive : Voir venir la panne sans en avoir vu une, grâce au transport optimal." width="49%"></a>
 </p>
 <!-- boite-a-trucs:fin -->
 
