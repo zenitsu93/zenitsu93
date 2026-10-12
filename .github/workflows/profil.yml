@@ -1,15 +1,16 @@
 name: Profil
 
-# Redessine les images du profil : le terminal du haut, les outils, les chiffres GitHub et le pied de page.
-# Chaque nuit, à la main (Actions > Profil > Run workflow), ou quand outils.yml change.
+# Redessine les images du profil : le terminal du haut, le mode d'emploi, les outils, les chiffres GitHub et le pied de page.
+# Toutes les heures, à la main (Actions > Profil > Run workflow), ou quand un fichier de réglages change.
 on:
   schedule:
-    - cron: "17 4 * * *"
+    - cron: "7 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - "profil/outils.yml"
+      - "profil/mode-d-emploi.yml"
       - "profil/moteur/**"
       - ".github/workflows/profil.yml"
 
