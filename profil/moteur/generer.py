@@ -330,10 +330,41 @@ def titre_section(texte, theme):
     return svg_libre(1760, 144, corps, texte)
 
 
+CYCLE, ROULEMENT = 15, 1.7  # le compteur repart toutes les 15 s et défile pendant 1,7 s
+
+
+def chiffres_svg(taille, couleur):
+    """Les dix chiffres, définis une fois et réutilisés par les compteurs."""
+    return "".join(f'<path id="g{n}" d="{F.trace(str(n), 0, 0, taille, "xb")[0]}" fill="{couleur}"/>' for n in range(10))
+
+
+def compteur(s, x, y, taille, uid, decalage):
+    """Nombre qui défile comme un compteur mécanique avant de s'arrêter sur sa valeur."""
+    f = F.police("xb")
+    pos, _ = f.composer(s)
+    k, ls, pas = taille / f.upm, -.03, taille * 1.2
+    clips, corps = [], []
+    for i, ((g, gx), ch) in enumerate(zip(pos, s)):
+        if not ch.isdigit():
+            continue
+        cx = x + gx * k + i * ls * taille
+        fin = 10 + int(ch)
+        clips.append(f'<clipPath id="k{uid}{i}"><rect x="{f1(cx - 2)}" y="{f1(y - taille * .8)}" width="{f1(f.hmtx[g][0] * k + 4)}" '
+                     f'height="{f1(taille * .92)}"/></clipPath>')
+        pile = "".join(f'<use href="#g{j % 10}" xlink:href="#g{j % 10}" y="{f1(j * pas)}"/>' for j in range(fin + 1))
+        t1 = ROULEMENT / CYCLE
+        corps.append(f'<g clip-path="url(#k{uid}{i})"><g transform="translate({f1(cx)} {f1(y)})"><g>'
+                     f'<animateTransform attributeName="transform" type="translate" dur="{CYCLE}s" begin="{decalage + i * .06:.2f}s" '
+                     f'repeatCount="indefinite" values="0 0;0 {f1(-fin * pas)};0 {f1(-fin * pas)}" keyTimes="0;{t1:.3f};1" '
+                     f'calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1"/>{pile}</g></g></g>')
+    return "".join(clips), "".join(corps)
+
+
 def en_chiffres(theme, D, langs):
-    """Quatre chiffres en grand, puis une fine barre des langages."""
+    """Quatre chiffres en grand qui défilent comme un compteur, puis une fine barre des langages."""
     t = THEMES[theme]
     W, c = 1200, []
+    defs = [chiffres_svg(64, t["texte"])]
     blocs = [(nb(D["contributions"]), "contributions", "sur un an"), (nb(D["commits"]), "commits publics", "sur un an"),
              (nb(D["depots"]), "dépôts", "publics"), (nb(D["abonnes"]), "abonnés", "")]
     col = W / 4
@@ -341,8 +372,10 @@ def en_chiffres(theme, D, langs):
         x = i * col + (0 if i == 0 else 28)
         if i:
             c.append(f'<path d="M{f1(i * col)} 14 V128" stroke="{t["trait"]}" stroke-opacity=".12"/>')
-        d, w = F.trace(n, x, 78, 64, "xb", -.03)
-        c.append(f'<path d="{d}" fill="{t["texte"]}"/><circle cx="{f1(x + w + 10)}" cy="70" r="7" fill="{OR}"/>')
+        _, w = F.trace(n, x, 78, 64, "xb", -.03)
+        clips, corps = compteur(n, x, 78, 64, i, .3 + i * .15)
+        defs.append(clips)
+        c.append(corps + f'<circle cx="{f1(x + w + 10)}" cy="70" r="7" fill="{OR}"/>')
         c.append(F.texte(l1.upper(), x + 2, 112, 13, t["discret"], "sb", .14))
         if l2:
             c.append(F.texte(l2, x + 2, 134, 14, t["discret"], "m"))
@@ -360,9 +393,36 @@ def en_chiffres(theme, D, langs):
         s = f"{k} {pct(p)}"
         c.append(f'<circle cx="{x + 5}" cy="{y + 25}" r="5" fill="{teintes[i % 5]}"/>' + F.texte(s, x + 16, y + 31, 16, t["texte"], "m"))
         x += 16 + F.largeur(s, 16, "m") + 30
+    # témoin « en direct » : un point qui respire
+    c.append(f'<circle cx="7" cy="{y + 74}" r="5" fill="{OR}"><animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/></circle>'
+             + F.texte("Chiffres publics de GitHub, actualisés toutes les heures", 22, y + 79, 13, t["discret"], "m"))
     alt = (f"En chiffres : {nb(D['contributions'])} contributions sur un an, {D['commits']} commits publics, {D['depots']} dépôts publics, "
            f"{D['abonnes']} abonnés. Langages : " + ", ".join(f"{k} {pct(p)}" for k, p in langs) + ".")
-    return svg_libre(W, y + 46, "".join(c), alt)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {y + 92}" width="{W}" '
+            f'height="{y + 92}" role="img" aria-label="{esc(alt)}"><title>{esc(alt)}</title><defs>{"".join(defs)}</defs>{"".join(c)}</svg>\n')
+
+
+# ================= mode d'emploi =================
+def mode_emploi(theme):
+    """Même grammaire que les outils : le trait de caractère à gauche, la phrase à droite."""
+    t = THEMES[theme]
+    conf = yaml.safe_load(io.open(os.path.join(PROFIL, "mode-d-emploi.yml"), encoding="utf-8")) or {}
+    lignes = [(str(l["titre"]), str(l["texte"])) for l in (conf.get("lignes") or [])]
+    W, X0, TT, LIGNE, INTER = 1200, 250, 19, 58, 28
+    corps, y = [], 8
+    for k, (titre_l, texte_l) in enumerate(lignes):
+        morceaux = F.couper(texte_l, TT, W - X0, "m")
+        h = LIGNE + (len(morceaux) - 1) * INTER
+        cy0 = y + LIGNE / 2
+        corps.append(f'<circle cx="5" cy="{f1(cy0)}" r="4.5" fill="{OR}"/>' + F.texte(titre_l.upper(), 22, cy0 + 5, 14, t["discret"], "sb", .14))
+        for j, m in enumerate(morceaux):
+            corps.append(F.texte(m, X0, cy0 + TT * .36 + j * INTER, TT, t["texte"], "m"))
+        y += h
+        if k < len(lignes) - 1:
+            corps.append(f'<path d="M0 {f1(y + 6)} H{W}" stroke="{t["trait"]}" stroke-opacity=".10"/>')
+            y += 12
+    alt = "Mode d’emploi. " + " ".join(f"{a} : {b}" for a, b in lignes)
+    return svg_libre(W, math.ceil(y + 8), "".join(corps), alt)
 
 
 # ================= on se parle ? =================
@@ -406,6 +466,7 @@ def main():
     gardes = set()
     for theme in THEMES:
         images[f"outils-{theme}.svg"] = outils(theme)
+        images[f"mode-d-emploi-{theme}.svg"] = mode_emploi(theme)
         images[f"titre-en-chiffres-{theme}.svg"] = titre_section("en chiffres", theme)
     try:
         D, langs = chiffres()
