@@ -266,6 +266,19 @@ def svg_libre(w, h, corps, titre):
 
 
 # ================= avec quoi je bricole =================
+CYCLE_VAGUE = 16  # secondes
+
+
+def vague(el, rang):
+    """Chaque outil monte et apparaît à son tour, reste affiché, puis la vague repart."""
+    t0 = .4 + rang * .07
+    a, b, z = t0 / CYCLE_VAGUE, (t0 + .55) / CYCLE_VAGUE, (CYCLE_VAGUE - .5) / CYCLE_VAGUE
+    return (f'<g><animate attributeName="opacity" dur="{CYCLE_VAGUE}s" repeatCount="indefinite" values="0;0;1;1;0" '
+            f'keyTimes="0;{a:.4f};{b:.4f};{z:.4f};1"/>'
+            f'<animateTransform attributeName="transform" type="translate" dur="{CYCLE_VAGUE}s" repeatCount="indefinite" '
+            f'calcMode="spline" values="0 10;0 10;0 0;0 0" keyTimes="0;{a:.4f};{b:.4f};1" keySplines="0 0 1 1;.2 .8 .3 1;0 0 1 1"/>{el}</g>')
+
+
 def categories():
     conf = yaml.safe_load(io.open(os.path.join(PROFIL, "outils.yml"), encoding="utf-8")) or {}
     return [(str(c["nom"]), [str(o) for o in c.get("outils") or []]) for c in (conf.get("categories") or [])]
@@ -275,7 +288,7 @@ def outils(theme):
     """Une ligne par catégorie : le nom à gauche, puis chaque outil avec son logo."""
     t = THEMES[theme]
     W, X0, L, TT, PAS, LIGNE = 1200, 250, 26, 19, 34, 58
-    corps, y = [], 8
+    corps, y, rang = [], 8, 0
     cats = categories()
     for k, (nom, items) in enumerate(cats):
         # découpe en lignes selon la largeur disponible
@@ -295,10 +308,11 @@ def outils(theme):
             cy = y + LIGNE / 2
             for it, x in ligne:
                 if it in LOGOS:
-                    corps.append(f'<path transform="translate({f1(x)} {f1(cy - L / 2)}) scale({L / 24:.4f})" d="{LOGOS[it]}" fill="{t["texte"]}"/>')
+                    logo = f'<path transform="translate({f1(x)} {f1(cy - L / 2)}) scale({L / 24:.4f})" d="{LOGOS[it]}" fill="{t["texte"]}"/>'
                 else:
-                    corps.append(icone("data" if it.upper() == "SQL" else "code", x - 1, cy - L / 2 - 1, L + 2, encre=t["texte"], sw=3.6))
-                corps.append(F.texte(it, x + L + 10, cy + TT * .36, TT, t["texte"], "m"))
+                    logo = icone("data" if it.upper() == "SQL" else "code", x - 1, cy - L / 2 - 1, L + 2, encre=t["texte"], sw=3.6)
+                corps.append(vague(logo + F.texte(it, x + L + 10, cy + TT * .36, TT, t["texte"], "m"), rang))
+                rang += 1
             y += LIGNE
         if k < len(cats) - 1:
             corps.append(f'<path d="M0 {f1(y + 6)} H{W}" stroke="{t["trait"]}" stroke-opacity=".10"/>')
@@ -321,13 +335,44 @@ def pct(p):
     return (f"{p:.1f}".replace(".", ",").replace(",0", "") + " %") if p >= 1 else "< 1 %"
 
 
-def titre_section(texte, theme):
-    """Titre de section au format des titres du kit (1760 × 144) : le mot, le point orange, un trait."""
+CYCLE_TITRE = 12  # secondes
+TITRES = [("salut", "salut"), ("mode-d-emploi", "mode d’emploi"), ("outils", "avec quoi je bricole"), ("en-chiffres", "en chiffres")]
+
+
+def titre_section(texte, theme, decalage=0.0):
+    """Titre de section au format des titres du kit (1760 × 144). Le texte reste fixe ;
+    le trait se dessine de gauche à droite, puis le point orange apparaît avec un petit rebond."""
     d, w = F.trace(texte, 6, 104, 84.4, "xb", -.03)
     cx = 6 + w + 15.5
-    corps = (f'<path d="{d}" fill="{THEMES[theme]["texte"]}"/><circle cx="{f1(cx)}" cy="93" r="9" fill="{OR}"/>'
-             f'<rect x="{f1(cx + 54)}" y="70" width="{f1(1756 - cx - 54)}" height="4" fill="{LIGNE_TITRE[theme]}"/>')
+    x0, larg = cx + 54, 1756 - cx - 54
+    kt = lambda s: f"{min(max((decalage + s) / CYCLE_TITRE, 0), 1):.4f}"
+    trait = (f'<rect x="{f1(x0)}" y="70" width="{f1(larg)}" height="4" fill="{LIGNE_TITRE[theme]}">'
+             f'<animate attributeName="width" dur="{CYCLE_TITRE}s" repeatCount="indefinite" calcMode="spline" '
+             f'values="0;0;{f1(larg)};{f1(larg)}" keyTimes="0;{kt(.3)};{kt(1.6)};1" keySplines="0 0 1 1;.3 .7 .2 1;0 0 1 1"/></rect>')
+    point = (f'<circle cx="{f1(cx)}" cy="93" r="9" fill="{OR}">'
+             f'<animate attributeName="r" dur="{CYCLE_TITRE}s" repeatCount="indefinite" calcMode="spline" '
+             f'values="9;9;0;12;8;9;9" keyTimes="0;{kt(.05)};{kt(.15)};{kt(.45)};{kt(.6)};{kt(.75)};1" '
+             f'keySplines="0 0 1 1;.4 0 1 1;.2 .8 .3 1;.4 0 .6 1;.4 0 .6 1;0 0 1 1"/></circle>')
+    corps = f'<path d="{d}" fill="{THEMES[theme]["texte"]}"/>{point}{trait}'
     return svg_libre(1760, 144, corps, texte)
+
+
+# ================= boutons du haut =================
+BOUTONS = [("linkedin", "LinkedIn", "profil"), ("ecrire", "M’écrire", "mail"), ("2nb", "2NB Digital", "globe")]
+
+
+def bouton(cle, texte_b, nom_icone):
+    """Pilule marine 460 × 112 du kit ; une lumière orange fait le tour du bouton « M’écrire »."""
+    W, H = 460, 112
+    tw = F.largeur(texte_b, 31, "sb")
+    x = (W - (40 + 24 + tw)) / 2
+    corps = [f'<rect width="{W}" height="{H}" rx="56" fill="{MAR}"/>', icone(nom_icone, x, H / 2 - 20, 40, sw=3.4),
+             F.texte(texte_b, x + 64, H / 2 + 31 * .36, 31, CL, "sb")]
+    defs = ""
+    if cle == "ecrire":
+        corps.append(faisceau_bord(2, 2, W - 4, H - 4, 54, 5, 3.4))
+        defs = FLOU
+    return svg(W, H, "".join(corps), texte_b, defs, 56, None)
 
 
 CYCLE, ROULEMENT = 15, 1.7  # le compteur repart toutes les 15 s et défile pendant 1,7 s
@@ -382,7 +427,12 @@ def en_chiffres(theme, D, langs):
     y, x, largeur = 188, 150, W - 150
     c.append(F.texte("LANGAGES", 2, y, 13, t["discret"], "sb", .14))
     teintes = TEINTES[theme]
-    c.append(f'<clipPath id="barre"><rect x="{x}" y="{y - 11}" width="{largeur}" height="8" rx="4"/></clipPath><g clip-path="url(#barre)">')
+    # la barre se remplit pendant que les chiffres défilent, et finit avec eux
+    debut, fin = .3 / CYCLE, (.3 + ROULEMENT + .4) / CYCLE
+    c.append(f'<clipPath id="barre"><rect x="{x}" y="{y - 11}" width="{largeur}" height="8" rx="4">'
+             f'<animate attributeName="width" dur="{CYCLE}s" repeatCount="indefinite" calcMode="spline" '
+             f'values="0;0;{largeur};{largeur}" keyTimes="0;{debut:.4f};{fin:.4f};1" keySplines="0 0 1 1;.25 .8 .25 1;0 0 1 1"/>'
+             f'</rect></clipPath><g clip-path="url(#barre)">')
     for i, (k, p) in enumerate(langs):
         w = largeur * p / 100
         c.append(f'<rect x="{f1(x)}" y="{y - 11}" width="{f1(w + .5)}" height="8" fill="{teintes[i % 5]}"/>')
@@ -467,7 +517,11 @@ def main():
     for theme in THEMES:
         images[f"outils-{theme}.svg"] = outils(theme)
         images[f"mode-d-emploi-{theme}.svg"] = mode_emploi(theme)
-        images[f"titre-en-chiffres-{theme}.svg"] = titre_section("en chiffres", theme)
+        # titres en cascade : chacun démarre un peu après le précédent
+        for k, (cle, texte) in enumerate(TITRES):
+            images[f"titre-{cle}-{theme}.svg"] = titre_section(texte, theme, k * .5)
+    for cle, texte_b, nom_icone in BOUTONS:
+        images[f"bouton-{cle}.svg"] = bouton(cle, texte_b, nom_icone)
     try:
         D, langs = chiffres()
         for theme in THEMES:
