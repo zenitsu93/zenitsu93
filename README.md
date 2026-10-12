@@ -27,34 +27,15 @@ Le jour, je conçois des produits data, IA et web chez **[2NB Digital](https://2
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="kit-badolo/09-github/titres/projets-sombre.png">
-  <img src="kit-badolo/09-github/titres/projets-clair.png" alt="ma boîte à trucs" width="100%">
-</picture>
-
-<!-- boite-a-trucs:debut -->
-<p align="center">
-  <a href="https://github.com/zenitsu93/detection-anomalies-salariales"><img src="profil/images/projets/detection-anomalies-salariales.svg" alt="Anomalies salariales : Repérer les salaires hors norme, chiffrer l’ajustement, mesurer l’écart femmes-hommes." width="100%"></a>
-  <a href="https://github.com/zenitsu93/learny-education-chatbot"><img src="profil/images/projets/learny-education-chatbot.svg" alt="Learny : Un assistant de révision qui répond à partir de tes cours, pas de ce qu’il croit savoir." width="49%"></a>
-  <a href="https://github.com/zenitsu93/encore-duel-playlists"><img src="profil/images/projets/encore-duel-playlists.svg" alt="Encore : Un blind test multijoueur pour savoir qui connaît vraiment ses classiques." width="49%"></a>
-  <a href="https://github.com/zenitsu93/heart-attack-api-monitoring"><img src="profil/images/projets/heart-attack-api-monitoring.svg" alt="Modèle sous surveillance : Mettre un modèle en production, et savoir quand il déraille." width="49%"></a>
-  <a href="https://github.com/zenitsu93/amazon-books-elt-snowflake"><img src="profil/images/projets/amazon-books-elt-snowflake.svg" alt="Amazon → Snowflake : Extraction, orchestration et entrepôt : un pipeline reproductible en une commande." width="49%"></a>
-  <a href="https://github.com/zenitsu93/gat-chest-xray-classification"><img src="profil/images/projets/gat-chest-xray-classification.svg" alt="GAT · radiographies : Des radios du thorax qui se comparent entre elles pour mieux se classer. AUC 0,88." width="49%"></a>
-  <a href="https://github.com/zenitsu93/predictive-maintenance-optimal-transport"><img src="profil/images/projets/predictive-maintenance-optimal-transport.svg" alt="Maintenance prédictive : Voir venir la panne sans en avoir vu une, grâce au transport optimal." width="49%"></a>
-</p>
-<!-- boite-a-trucs:fin -->
-
-**Et aussi :** [RAG sur PDF](https://github.com/zenitsu93/rag-pdf-gemini) · [Questions aux documents officiels burkinabè](https://github.com/zenitsu93/document-qa-rag) · [Gompertz](https://github.com/zenitsu93/gompertz-tumor-growth) · [Foot + YOLO](https://github.com/zenitsu93/yolo-v8-football-player-detection) · [Voyageur de commerce](https://github.com/zenitsu93/tsp-simulated-annealing) · [tous mes dépôts](https://github.com/zenitsu93?tab=repositories)
-
-<br>
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="kit-badolo/09-github/titres/mode-d-emploi-sombre.png">
   <img src="kit-badolo/09-github/titres/mode-d-emploi-clair.png" alt="mode d'emploi" width="100%">
 </picture>
 
-<p align="center">
-  <img src="profil/images/mode-d-emploi.svg" alt="Méthode : pas besoin de réinventer la roue, je m'inspire, je trouve l'astuce, je gagne du temps. Carburant : un merci sincère, et une chanson dont les paroles me parlent. Force : la vivacité, je capte vite, je m'emballe encore plus vite. Manie : que tout soit carré, vraiment tout. Point faible : les plans à long terme, j'y travaille, d'où FangUp." width="100%">
-</p>
+<img src="kit-badolo/08-icones/pastille/eclair.svg" width="24" align="absmiddle" alt=""> &nbsp;**Force** : la vivacité. Je capte vite, je m'emballe encore plus vite.<br>
+<img src="kit-badolo/08-icones/pastille/ampoule.svg" width="24" align="absmiddle" alt=""> &nbsp;**Méthode** : pas besoin de réinventer la roue. Je m'inspire, je trouve l'astuce, je gagne du temps.<br>
+<img src="kit-badolo/08-icones/pastille/carre.svg" width="24" align="absmiddle" alt=""> &nbsp;**Manie** : que tout soit carré. Vraiment tout.<br>
+<img src="kit-badolo/08-icones/pastille/agenda.svg" width="24" align="absmiddle" alt=""> &nbsp;**Point faible** : les plans à long terme. J'y travaille. D'où FangUp.<br>
+<img src="kit-badolo/08-icones/pastille/coeur.svg" width="24" align="absmiddle" alt=""> &nbsp;**Carburant** : un merci sincère, et une chanson dont les paroles me parlent.
 
 <br>
 
@@ -63,9 +44,22 @@ Le jour, je conçois des produits data, IA et web chez **[2NB Digital](https://2
   <img src="kit-badolo/09-github/titres/outils-clair.png" alt="avec quoi je bricole" width="100%">
 </picture>
 
-<p align="center">
-  <img src="profil/images/outils.svg" alt="Langages : Python, TypeScript, JavaScript, SQL. IA et data : PyTorch, TensorFlow, scikit-learn, LangChain, pandas. Data engineering : Airflow, Snowflake, Spark, Docker, PostgreSQL. Web : React, Next.js, Node.js, FastAPI, Django, Supabase." width="100%">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profil/images/outils-sombre.svg">
+  <img src="profil/images/outils-clair.svg" alt="Langages : Python, TypeScript, JavaScript, SQL. IA et data : PyTorch, TensorFlow, scikit-learn, LangChain, pandas. Data engineering : Airflow, Snowflake, Spark, Docker, PostgreSQL. Web : React, Next.js, Node.js, FastAPI, Django, Supabase." width="100%">
+</picture>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profil/images/titre-en-chiffres-sombre.svg">
+  <img src="profil/images/titre-en-chiffres-clair.svg" alt="en chiffres" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profil/images/en-chiffres-sombre.svg">
+  <img src="profil/images/en-chiffres-clair.svg" alt="Mes chiffres GitHub : contributions sur un an, commits publics, dépôts publics, abonnés, et les langages de mes dépôts publics." width="100%">
+</picture>
 
 <br>
 
