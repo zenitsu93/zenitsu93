@@ -31,11 +31,10 @@ Le jour, je conçois des produits data, IA et web chez **[2NB Digital](https://2
   <img src="kit-badolo/09-github/titres/mode-d-emploi-clair.png" alt="mode d'emploi" width="100%">
 </picture>
 
-<img src="kit-badolo/08-icones/pastille/eclair.svg" width="24" align="absmiddle" alt=""> &nbsp;**Force** : la vivacité. Je capte vite, je m'emballe encore plus vite.<br>
-<img src="kit-badolo/08-icones/pastille/ampoule.svg" width="24" align="absmiddle" alt=""> &nbsp;**Méthode** : pas besoin de réinventer la roue. Je m'inspire, je trouve l'astuce, je gagne du temps.<br>
-<img src="kit-badolo/08-icones/pastille/carre.svg" width="24" align="absmiddle" alt=""> &nbsp;**Manie** : que tout soit carré. Vraiment tout.<br>
-<img src="kit-badolo/08-icones/pastille/agenda.svg" width="24" align="absmiddle" alt=""> &nbsp;**Point faible** : les plans à long terme. J'y travaille. D'où FangUp.<br>
-<img src="kit-badolo/08-icones/pastille/coeur.svg" width="24" align="absmiddle" alt=""> &nbsp;**Carburant** : un merci sincère, et une chanson dont les paroles me parlent.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profil/images/mode-d-emploi-sombre.svg">
+  <img src="profil/images/mode-d-emploi-clair.svg" alt="Mode d'emploi. Force : la vivacité. Méthode : pas besoin de réinventer la roue. Manie : que tout soit carré. Point faible : les plans à long terme. Carburant : un merci sincère, et une chanson dont les paroles me parlent." width="100%">
+</picture>
 
 <br>
 

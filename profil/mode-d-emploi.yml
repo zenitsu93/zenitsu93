@@ -1,0 +1,17 @@
+# Mode d'emploi : une ligne par trait de caractère. Modifie un texte, l'image se redessine.
+
+lignes:
+  - titre: Force
+    texte: "La vivacité. Je capte vite, je m’emballe encore plus vite."
+
+  - titre: Méthode
+    texte: "Pas besoin de réinventer la roue. Je m’inspire, je trouve l’astuce, je gagne du temps."
+
+  - titre: Manie
+    texte: "Que tout soit carré. Vraiment tout."
+
+  - titre: Point faible
+    texte: "Les plans à long terme. J’y travaille. D’où FangUp."
+
+  - titre: Carburant
+    texte: "Un merci sincère, et une chanson dont les paroles me parlent."
