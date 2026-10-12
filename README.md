@@ -3,16 +3,16 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/christianthomasbadolo/"><img src="kit-badolo/09-github/boutons/linkedin.png" alt="LinkedIn" height="44"></a>&nbsp;
-  <a href="mailto:christianthomasbadolo@gmail.com"><img src="kit-badolo/09-github/boutons/ecrire.png" alt="M'écrire" height="44"></a>&nbsp;
-  <a href="https://2nbdigital.com/"><img src="kit-badolo/09-github/boutons/2nb.png" alt="2NB Digital" height="44"></a>
+  <a href="https://www.linkedin.com/in/christianthomasbadolo/"><img src="profil/images/bouton-linkedin.svg" alt="LinkedIn" height="44"></a>&nbsp;
+  <a href="mailto:christianthomasbadolo@gmail.com"><img src="profil/images/bouton-ecrire.svg" alt="M'écrire" height="44"></a>&nbsp;
+  <a href="https://2nbdigital.com/"><img src="profil/images/bouton-2nb.svg" alt="2NB Digital" height="44"></a>
 </p>
 
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="kit-badolo/09-github/titres/salut-sombre.png">
-  <img src="kit-badolo/09-github/titres/salut-clair.png" alt="salut" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="profil/images/titre-salut-sombre.svg">
+  <img src="profil/images/titre-salut-clair.svg" alt="salut" width="100%">
 </picture>
 
 <img src="kit-badolo/09-github/monogramme-anime.webp" alt="Le monogramme b se construit" width="250" align="right">
@@ -27,8 +27,8 @@ Le jour, je conçois des produits data, IA et web chez **[2NB Digital](https://2
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="kit-badolo/09-github/titres/mode-d-emploi-sombre.png">
-  <img src="kit-badolo/09-github/titres/mode-d-emploi-clair.png" alt="mode d'emploi" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="profil/images/titre-mode-d-emploi-sombre.svg">
+  <img src="profil/images/titre-mode-d-emploi-clair.svg" alt="mode d'emploi" width="100%">
 </picture>
 
 <picture>
@@ -39,8 +39,8 @@ Le jour, je conçois des produits data, IA et web chez **[2NB Digital](https://2
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="kit-badolo/09-github/titres/outils-sombre.png">
-  <img src="kit-badolo/09-github/titres/outils-clair.png" alt="avec quoi je bricole" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="profil/images/titre-outils-sombre.svg">
+  <img src="profil/images/titre-outils-clair.svg" alt="avec quoi je bricole" width="100%">
 </picture>
 
 <picture>
